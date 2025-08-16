@@ -1,5 +1,5 @@
-#website github page
+@Website github page
 https://sansoe2022.github.io/PNT_VPN/
 
-#website netlify page
+@Website netlify page
 https://pntvpn.netlify.app/
