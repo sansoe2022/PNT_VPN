@@ -98,8 +98,9 @@
         
         <!-- Dtac Sub Tabs -->
         <div class="flex p-1 mb-4 space-x-1 bg-gray-200/50 dark:bg-gray-800/50 rounded-xl overflow-x-auto hide-scrollbar">
-          <button id="sub-btn-dtac-nopro" onclick="setSubTab('dtac', 'nopro')" class="flex-1 min-w-[100px] py-2 text-xs font-black rounded-lg shadow-sm bg-white dark:bg-gray-700 text-blue-600 dark:text-blue-400 transition-all">Dtac No Pro</button>
-          <button id="sub-btn-dtac-gaming" onclick="setSubTab('dtac', 'gaming')" class="flex-1 min-w-[100px] py-2 text-xs font-black rounded-lg text-gray-500 hover:text-gray-700 dark:text-gray-400 transition-all">Dtac Social</button>
+          <button id="sub-btn-dtac-nopro" onclick="setSubTab('dtac', 'nopro')" class="flex-1 min-w-[85px] py-2 px-2 text-xs font-black rounded-lg shadow-sm bg-white dark:bg-gray-700 text-blue-600 dark:text-blue-400 transition-all">Dtac No Pro</button>
+          <button id="sub-btn-dtac-gaming" onclick="setSubTab('dtac', 'gaming')" class="flex-1 min-w-[85px] py-2 px-2 text-xs font-black rounded-lg text-gray-500 hover:text-gray-700 dark:text-gray-400 transition-all">Dtac Social</button>
+          <button id="sub-btn-dtac-viu" onclick="setSubTab('dtac', 'viu')" class="flex-1 min-w-[85px] py-2 px-2 text-xs font-black rounded-lg text-gray-500 hover:text-gray-700 dark:text-gray-400 transition-all">Dtac VIU</button>
         </div>
 
         <!-- Dtac No Pro Content -->
@@ -117,7 +118,6 @@
           <p class="font-black text-sm mb-3 text-blue-600 dark:text-blue-400">Dtac Social ပက်ကေ့နဲ့ စမတ်ပြီး သုံးနည်း</p>
           <p class="text-[11px] text-gray-400 dark:text-gray-500 font-bold mb-1">30 ရက် / 135 ဘတ်</p>
           
-          <!-- New Link Added Here -->
           <p class="text-[11px] text-gray-500 dark:text-gray-400 font-bold mb-2">
             Dtac Appမရှိသေးရင် <a href="https://play.google.com/store/apps/details?id=th.co.crie.tron2.android" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 underline decoration-2 underline-offset-2 hover:opacity-80 transition-opacity">"Download ရယူရန်"</a>
           </p>
@@ -131,6 +131,23 @@
           <div class="flex items-start gap-2 border rounded-xl px-3 py-2.5 text-xs font-bold mt-3 bg-red-50 dark:bg-red-900/20 border-red-200 dark:border-red-800 text-red-600 dark:text-red-400">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 shrink-0"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
             <span class="leading-relaxed">Dtac Socialဖိုင်ကို ရွေးပြီး ချိတ်ပါ</span>
+          </div>
+        </div>
+
+        <!-- Dtac VIU Content -->
+        <div id="sub-panel-dtac-viu" class="sub-panel hidden p-4 bg-white dark:bg-gray-800/80 border border-gray-100 dark:border-gray-700/50 rounded-2xl shadow-sm">
+          <p class="font-black text-sm mb-3 text-blue-600 dark:text-blue-400">Dtac VIU ပက်ကေ့စမတ်နည်း</p>
+          <p class="text-[11px] text-gray-400 dark:text-gray-500 font-bold mb-2">30ရက် / 79ဘတ်</p>
+          <div class="flex items-center justify-between gap-2 py-1.5">
+            <span class="font-black text-lg text-gray-900 dark:text-white tracking-tight">*900*7432#</span>
+            <a href="tel:*900*7432%23" class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl font-black text-xs text-white shadow-sm transition-all active:scale-95 bg-blue-600 hover:bg-blue-700">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.4 2 2 0 0 1 3.59 1.23h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l1.84-1.84a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Call
+            </a>
+          </div>
+          <div class="flex items-start gap-2 border rounded-xl px-3 py-2.5 text-xs font-bold mt-2 bg-red-50 dark:bg-red-900/20 border-red-200 dark:border-red-800 text-red-600 dark:text-red-400">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 shrink-0"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            <span class="leading-relaxed">Dtac VIU ဖိုင်ကို ရွေးပြီး ချိတ်သုံးပါ</span>
           </div>
         </div>
 
@@ -354,7 +371,7 @@
   };
 
   const subTabs = {
-    dtac: ['nopro', 'gaming'],
+    dtac: ['nopro', 'gaming', 'viu'],
     true: ['nopro', 'ig', 'viu', 'vdo'],
     ais: ['64kbps', 'play']
   };
