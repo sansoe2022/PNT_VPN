@@ -512,6 +512,24 @@
     if(name === 'ais') setSubTab('ais', '64kbps');
   }
 
+  // ─── URL ကနေ Tab ကို အလိုအလျောက် ရွေးပေးမည့်အပိုင်း ───
+  window.addEventListener('DOMContentLoaded', () => {
+    const params = new URLSearchParams(window.location.search);
+    const urlTab = params.get('tab');
+    const urlSub = params.get('sub');
+
+    if (urlTab && tabs.includes(urlTab)) {
+      setTab(urlTab); // ဒါက Main Tab ကို ပြောင်းပေးပါမယ်
+      
+      if (urlSub && subTabs[urlTab].includes(urlSub)) {
+        // setTimeout လေးခံပေးမှ အလုပ်ပိုသေချာလုပ်ပါတယ်
+        setTimeout(() => {
+          setSubTab(urlTab, urlSub);
+        }, 50);
+      }
+    }
+  });
+
   // ─── Image Viewer (Pinch-to-Zoom + Pan) ─────────────
   const viewer = document.getElementById('imageViewer');
   const viewerImg = document.getElementById('viewerImg');
